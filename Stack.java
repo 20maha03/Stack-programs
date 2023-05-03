@@ -230,6 +230,18 @@ public class Stack{
         }
         tempStack.display();
     }
+    public void shifting(Stack stack){
+      int temp=stack.pop();
+      Stack tempStack=new Stack(arr.length);
+      for(int i=top;i>=0;i--){
+        tempStack.push(stack.pop());
+      }
+      tempStack.push(temp);
+      for(int i=top;i>=0;i--){
+        System.out.print(arr[i]+" ");
+      }
+
+    }
 
 
 }
