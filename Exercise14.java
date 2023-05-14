@@ -13,7 +13,17 @@ public class Exercise14{
         stack2.push(2);
         stack2.push(1);
         stack2.display();
-        stack2.mergeTwoStack(stack1,stack2);
-        stack2.display();
+        int size1=stack1.top+1;
+        int size2=stack2.top+1;
+        Stack mergestack =new Stack(size1+size2);
+        for(int i=0;i<size1;i++){
+             mergestack.push(stack1.pop());
+        }
+        for(int i=0;i<size2;i++){
+             mergestack.push(stack2.pop());
+        }
+        System.out.println(mergestack);
+        mergestack.display();
+       
     }
 }

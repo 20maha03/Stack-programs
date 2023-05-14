@@ -11,6 +11,12 @@ public class Exercise8{
         Scanner input=new Scanner(System.in);
         System.out.println("enter num");
         int num=input.nextInt();
-        p.checkElement(num);
+        for(int i=0;i<=p.top;i++){
+           if(p.arr[i]==num){
+             System.out.println("a given element "+num+ " is present");
+             break;
+           }
+         }
+        System.out.println("a given element "+num+ " is not present");
     }
 }

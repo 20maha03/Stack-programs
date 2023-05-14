@@ -13,7 +13,16 @@ public class Exercise15{
         name1.push(3);
         name1.push(6);
         name1.display();
-        name.commonElement(name1);
-
-    }
+        Stack tempStack = new Stack(name.arr.length);
+        for(int i=0;i<=name.top;i++){
+           int currentEle=name.arr[i];
+           for(int j=0;j<=name1.top;j++){
+             if(currentEle==name1.arr[j]){
+               tempStack.push(currentEle);
+               break;
+             }
+           }
+        }
+        tempStack.display();
+      }
 }

@@ -7,6 +7,17 @@ public class Exercise9{
         d.push(2);
         d.push(5);
         d.push(2);
-        d.dublicateElement();
+        int count;
+        for(int i=0;i<d.top;i++){
+           count=0;
+           for(int j=0;j<=d.top;j++){
+             if(d.arr[i]==d.arr[j]){
+               count++;
+             }
+           }
+           if(count==1){
+             System.out.println(" "+d.arr[i]);
+           }
+        }
     }
 }

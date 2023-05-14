@@ -8,8 +8,15 @@ public class Exercise13{
         sw.push(4);
         sw.push(3);
         sw.display();
-        sw.swapTwoElements();
         System.out.println("after swapping");
+        if(sw.top<1){
+           System.out.println("stack has less than rwo elements");
+        }
+        else{
+           int temp=sw.arr[sw.top];
+           sw.arr[sw.top]=sw.arr[sw.top-1];
+           sw.arr[sw.top-1]=temp;
+        }
         sw.display();
-    }
+      }
 }

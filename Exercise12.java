@@ -7,8 +7,18 @@ public class Exercise12{
         se.push(1);
         se.push(1);
         se.push(1);
+        int count;
+        for(int i=0;i<=se.top;i++){
+           count=0;
+           for(int j=0;j<=se.top;j++){
+             if(se.arr[i]==se.arr[j]){
+               count++;
+             }
+           }
+           if(count!=1){
+              System.out.println(se.arr[i]);
+           }
         
-        se.removeSpecificElement();
-        
+        }
     }
 }

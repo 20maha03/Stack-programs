@@ -11,8 +11,22 @@ public class SortingElements{
         stack.push(6);
         stack.display();
         System.out.println("after sorting stack elements is");
-        stack.sort();
+        if(stack.top==-1){
+           System.out.println("stack is empty");
+           return;
+        }
+        Stack tempStack=new Stack(stack.arr.length);
+        while(!stack.isEmpty()){
+           int temp=stack.pop();
+           while(!tempStack.isEmpty() && tempStack.peek()>temp){
+             stack.push(tempStack.pop());
+           }
+           tempStack.push(temp);
+        }
+        while(!tempStack.isEmpty()){
+          stack.push(tempStack.pop());
+        }
         stack.display();
-
     }
+
 }

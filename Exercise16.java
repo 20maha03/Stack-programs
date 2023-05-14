@@ -8,13 +8,17 @@ public class Exercise16{
         c.push(4);
         c.display();
         Stack c1=new Stack(4);
+        c1.push(1);
+        c1.push(12);
+        c1.push(3);
         c1.push(4);
-        c1.push(5);
-        c1.push(6);
-        c1.push(7);
         c1.display();
-        System.out.println("is stack1 is equal to stack2:"+c.equals(c1));
-
-
-    }
+        for(int i=0;i<=c1.top;i++){
+          if(c.arr[i]==c1.arr[i]){
+             System.out.println("two stacks are equal");
+             break;
+          }
+        }
+        
+   }
 }

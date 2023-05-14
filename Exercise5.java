@@ -8,9 +8,19 @@ public class Exercise5{
         m.push(9);
         m.push(3);
         m.display();
-        System.out.println("minimum element is:"+m.getMin());
-        System.out.println("maximum element is:"+m.getMax());
-        
-
+        int min=m.arr[0];
+        for(int i=0;i<=m.top;i++){
+           if(m.arr[i]<min){
+             min=m.arr[i];
+          }
+        }
+        System.out.println("minimum value is:"+min);
+        int max=m.arr[0];
+        for(int i=0;i<=m.top;i++){
+           if(m.arr[i]>max){
+             max=m.arr[i];
+           }
+        }
+        System.out.println("maximum value is:"+max);
     }
 }

@@ -8,6 +8,7 @@ public class Exercise7{
         c.push(2);
         c.push(5);
         c.push(2);
-        System.out.println("number of element in a stack is:"+c.countElement());
+        int count=c.top+1;
+        System.out.println("number of elements in a stack is:"+count);
     }
 }

@@ -10,10 +10,11 @@ public class Exercise11{
         rr.push(6);
         rr.display();
         System.out.println("rotate the stack elements to the right by 1 position");
-        rr.rightRotate();
-        //rr.display();
-        //System.out.println("rotate the stack elements to the right by 2 position");
-        //rr.rightRotate(2);
-        //rr.display();
-    }
+        int temp=rr.pop();
+        Stack tempStack=new Stack(rr.arr.length);
+        for(int i=top;i>=0;i--){
+           tempStack.push(rr.pop());
+        }
+        tempStack.push
+   }
 }

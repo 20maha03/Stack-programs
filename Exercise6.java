@@ -1,5 +1,4 @@
 //Write a Java program to remove all elements from a stack.
-
 public class Exercise6{
     public static void main(String args[]){
         Stack a=new Stack(6);
@@ -10,8 +9,8 @@ public class Exercise6{
         a.push(4);
         a.push(2);
         a.display();
-        a.removeAll();
         System.out.println(a.isEmpty());
-
+        a.top=-1;
+        a.display();
     }
 }

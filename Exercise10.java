@@ -8,6 +8,10 @@ public class Exercise10{
         t.push(5);
         t.push(2);
         t.push(1);
-        t.topAndBottom();
+        System.out.println("top element of a stack is:"+t.peek());
+        for(int i=0;i<=t.top;i++){
+           System.out.println("bottom element of a stack is:"+t.arr[0]);
+           break;
+        }
     }
 }
